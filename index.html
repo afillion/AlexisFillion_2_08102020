@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="global.css">
     <meta name="description" content="Description de ma page inferieur a 155 char">
     <title>Reservia</title>
+    <script src="https://kit.fontawesome.com/ba9915404c.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -16,22 +17,16 @@
   	<!-- HEADER : "L'entete du site" -->
 
     <header>
-      <div id="header-container">
-        <div id="logo">
-          <img src="images/logo/Reservia.svg" alt="logo-reservia">
-        </div>
-        <div>
-          S'inscrire
-        </div>
+      <div class="header-container">
+        <img src="images/logo/Reservia.svg" alt="logo-reservia"/>
+        <a href="">S'inscrire</a>
       </div>
-      <div id="nav-container">
-        <nav>
-          <ul>
-            <li><a href="#hebergements">Hébergements</a></li>
-            <li><a href="#activities">Activités</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul>
+          <li><a href="#hebergements">Hébergements</a></li>
+          <li><a href="#activities">Activités</a></li>
+        </ul>
+      </nav>
     </header>
     
     <!-- HEADER : "L'entete du site" /END -->
@@ -41,23 +36,25 @@
         <h2>Trouvez votre hébergements pour vos vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
       </header>
-      <form action="">
-        <input type="text" placeholder="Marseille, France">
-        <button type="submit">test</button>
+      <form action="" method="POST">
+        <div class="form-button">
+          <button type="button"></button>
+          <input type="text" placeholder="Marseille, France">
+          <button type="submit">test</button>
+        </div>
       </form>
-      <!--input avec button search-->
-      <div id="filtres">
+      <div class="filtres">
         <p>Filtres</p>
-        <button type="button" class="filtre">test</button>
+        <button type="button" class="filtre"><div>icone</div><span>test</span></button>
       </div>
       <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
 
-    <section id="hebergements">
+    <section class="hebergements">
       <header>
         <h2>Hébergements à Marseille</h2>
       </header>
-      <div id="hebergement-fig-container">
+      <div class="hebergement-fig-container">
         <figure class="hebergement">
           <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="img">
           <figcaption>
@@ -103,11 +100,11 @@
       </div>
     </section>
 
-    <section id="populaires">
+    <section class="populaires">
       <header>
         <h2>Les plus populaires</h2>
       </header>
-      <div id="populaires-fig-container">
+      <div class="populaires-fig-container">
         <figure class="populaires">
           <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="img">
           <figcaption>
@@ -132,11 +129,11 @@
       </div>
     </section>
 
-    <section id="activities">
+    <section class="activities">
       <header>
         <h2>Activités à Marseille</h2>
       </header>
-      <div id="activities-fig-container">
+      <div class="activities-fig-container">
         <figure>
           <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="img">
           <figcaption>
