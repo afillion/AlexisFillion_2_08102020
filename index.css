@@ -6,3 +6,60 @@
 body {
   font-family: "Raleway", sans-serif;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+}
+
+aside {
+  margin: 20px;
+  padding: 20px;
+}
+
+footer {
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+}
+
+#hebergements, #populaires, #form-right {
+  background-color: #F2F2F2;
+}
+
+.form-right {
+  border-radius: 5px 0 0 5px;
+}
+
+.form-left {
+  border-radius: 0 5px 5px 0;
+}
+
+section img {
+  width: 300px;
+  height: 200px;
+}
+
+#hebergements {
+  width: 65%;
+}
+
+#populaires {
+  width: 30%;
+}
+
+.fa-info {
+  color: #0065FC;
+}
+
+.icone-container {
+  border: 1px solid #F2F2F2;
+  border-radius: 100%;
+  max-width: 2em;
+  min-height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
