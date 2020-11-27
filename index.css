@@ -19,8 +19,21 @@ section {
   padding: 20px;
 } */
 
-.form-button {
+.small-screen {
+  display: none;
+}
+
+#header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-button, #filtres, nav, ul {
   display: inline-flex;
+}
+
+#filtres {
+  justify-content: space-between;
 }
 
 footer {
@@ -35,10 +48,18 @@ footer {
 
 .form-right {
   border-radius: 5px 0 0 5px;
+  border: none;
 }
 
 .form-left {
   border-radius: 0 5px 5px 0;
+  border: none;
+}
+
+.form-button input {
+  border-left: none;
+  border-right: none;
+  border-width: 1px;
 }
 
 section img {
@@ -47,6 +68,11 @@ section img {
 }
 
 #hebergements {
+  width: 100%;
+  display: inline-flex;
+}
+
+#hebergement-fig-container {
   width: 65%;
 }
 
@@ -65,11 +91,11 @@ section img {
 .icone-container {
   border: 1px solid #F2F2F2;
   border-radius: 100%;
-  max-width: 2em;
-  min-height: 2em;
-  display: flex;
   align-items: center;
   justify-content: center;
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
 }
 
 .blue {
