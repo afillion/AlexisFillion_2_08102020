@@ -14,9 +14,13 @@ section {
   padding: 20px;
 }
 
-aside {
+/* aside {
   margin: 20px;
   padding: 20px;
+} */
+
+.form-button {
+  display: inline-flex;
 }
 
 footer {
@@ -46,6 +50,10 @@ section img {
   width: 65%;
 }
 
+.gras {
+  font-weight: bold;
+}
+
 #populaires {
   width: 30%;
 }
@@ -62,4 +70,8 @@ section img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.blue {
+  color: #0065FC;
 }
