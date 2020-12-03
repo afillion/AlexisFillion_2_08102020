@@ -14,6 +14,10 @@ section {
   padding: 20px;
 }
 
+#hebergements {
+  flex-direction: row;
+}
+
 /* aside {
   margin: 20px;
   padding: 20px;
@@ -28,12 +32,34 @@ section {
   justify-content: space-between;
 }
 
-.form-button, #filtres, nav, ul {
+.form-button, nav, ul {
   display: inline-flex;
 }
 
+.filtre-wrap-icon {
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  min-width: 3rem;
+  min-height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 #filtres {
+  display: flex;
   justify-content: space-between;
+  flex-direction: row;
+}
+
+.filtre {
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  border-width: 1px;
+  border-color:  #F2F2F2;
+  background-color: white;
 }
 
 footer {
@@ -46,14 +72,22 @@ footer {
   background-color: #F2F2F2;
 }
 
+.form-button {
+  min-height: 3rem;
+}
+
 .form-right {
-  border-radius: 5px 0 0 5px;
+  border-radius: 1rem 0 0 1rem;
   border: none;
+  min-width: 3rem;
 }
 
 .form-left {
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 1rem 1rem 0;
   border: none;
+  background-color: #0065FC;
+  color: white;
+  min-width: 8rem;
 }
 
 .form-button input {
@@ -82,10 +116,6 @@ section img {
 
 #populaires {
   width: 30%;
-}
-
-.fa-info {
-  color: #0065FC;
 }
 
 .icone-container {
