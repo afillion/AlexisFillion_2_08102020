@@ -11,17 +11,7 @@ section {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  padding: 20px;
 }
-
-#hebergements {
-  flex-direction: row;
-}
-
-/* aside {
-  margin: 20px;
-  padding: 20px;
-} */
 
 .small-screen {
   display: none;
@@ -51,6 +41,7 @@ section {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  width: 70%;
 }
 
 .filtre {
@@ -60,6 +51,8 @@ section {
   border-width: 1px;
   border-color:  #F2F2F2;
   background-color: white;
+  padding: 0;
+  border-style: solid;
 }
 
 footer {
@@ -94,20 +87,21 @@ footer {
   border-left: none;
   border-right: none;
   border-width: 1px;
+  border-color:  #F2F2F2;
+  border-style: solid;
 }
-
+/* 
 section img {
   width: 300px;
   height: 200px;
-}
+} */
 
 #hebergements {
-  width: 100%;
-  display: inline-flex;
+  width: 80%;
 }
 
 #hebergement-fig-container {
-  width: 65%;
+  display: flex;
 }
 
 .gras {
@@ -130,4 +124,46 @@ section img {
 
 .blue {
   color: #0065FC;
+}
+
+#populaire-header {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#populaire-icon {
+  display: flex;
+  align-items: center;
+}
+
+figure {
+  background-color: white;
+  width: 33%;
+  height: 13rem;
+}
+
+#hebergements, #activites, #populaires, figure, figcaption, img {
+  border-radius: 1rem;
+}
+
+.img-container {
+  background-size: cover;
+  width: 100%;
+  height: 60%;
+  background-position: 50%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#one {
+  background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+
+#two {
+  background-image: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+
+figcaption p, figcaption h3 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }

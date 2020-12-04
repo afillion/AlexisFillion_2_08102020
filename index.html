@@ -60,10 +60,11 @@
     </section>
 
     <section id="hebergements">
+      <h2>Hébergements à Marseille</h2>
       <div id="hebergement-fig-container">
-        <h2>Hébergements à Marseille</h2>
         <figure class="hebergement">
-          <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="img">
+          <div class="img-container" id="one">
+          </div>
           <figcaption>
             <h3>Auberge la Cannebière</h3>
             <p>Nuit a partir de <span class="gras">25e</span></p>
@@ -77,7 +78,7 @@
           </figcaption>
         </figure>
         <figure class="hebergement">
-          <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="img">
+          <div class="img-container" id="two"></div>
           <figcaption>
             <h3>Hôtel du port</h3>
             <p>Nuit a partir de <span class="gras">52e</span></p>
@@ -90,6 +91,7 @@
             </span>
           </figcaption>
         </figure>
+        <!--
         <figure class="hebergement">
           <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="img">
           <figcaption>
@@ -145,14 +147,15 @@
               <i class="fas fa-star blue"></i>
             </span>
           </figcaption>
-        </figure>
+        </figure> -->
       </div>
+    </section>
       
-      <aside id="populaires">
-        <header>
+    <section id="populaires">
+        <div id="populaire-header">
           <h2>Les plus populaires</h2>
-          <div><i class="fas fa-chart-line"></i></div>
-        </header>
+          <div id="populaire-icon"><i class="fas fa-chart-line"></i></div>
+        </div>
         <div id="populaires-fig-container">
           <figure class="populaires">
             <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="img">
@@ -197,7 +200,6 @@
             </figcaption>
           </figure>
         </div>
-      </aside>
     </section>
 
     <section id="activities">
