@@ -25,8 +25,9 @@ li {
   list-style-type: none;
 }
 
-li:hoover {
-  border-top: 5px solid blue;
+li:hover {
+  border-top: 5px solid #0065FC;
+  margin-top: -5px;
 }
 
 a {
