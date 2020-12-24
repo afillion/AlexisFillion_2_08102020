@@ -3,8 +3,17 @@
   src: url("./Raleway/Raleway-VariableFont_wght.ttf");
 }
 
+/* :root {
+  --my_red: #FF0000;
+}
+
+p {
+  color: var(--my_red) !important;
+} */
+
 body {
   font-family: "Raleway", sans-serif;
+  margin: 0;
 }
 
 section {
@@ -21,17 +30,32 @@ section {
   display: none;
 }
 
+ul {
+  margin-top: 0;
+}
+
 li {
   list-style-type: none;
+  margin-top: 1rem;
 }
 
-li:hover {
-  border-top: 5px solid #0065FC;
-  margin-top: -5px;
+ul a:hover {
+  border-top-color:#0065FC;
 }
 
-a {
+ul a {
+  border-top: 5px solid transparent;
   text-decoration: none;
+}
+
+nav > a:nth-child(2) {
+  text-decoration: none;
+  color: #0065FC;
+}
+
+input {
+  font-weight: bold;
+  padding-left: 1rem;
 }
 
 #header-container {
@@ -201,10 +225,11 @@ figcaption p, figcaption h3 {
 
 .img-container-hebergement {
   background-size: cover;
-  width: 100%;
-  height: 60%;
+  width: calc(100%-.3rem);
+  height: 50%;
   background-position: center;
   border-radius: 1rem 1rem 0 0;
+  margin: .3rem;
 }
 
 #hebergement-one {
