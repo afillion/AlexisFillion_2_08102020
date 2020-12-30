@@ -302,10 +302,6 @@ figcaption p, figcaption h3 {
 
 /* IMAGES SECTION ACTIVITES */
 
-section {
-  max-height: 60rem;
-}
-
 #activities-fig-container {
   display: flex;
   flex-flow: row wrap;
@@ -313,26 +309,32 @@ section {
   align-items: stretch;
 }
 
+#activities-fig-container  figure {
+  margin: 0;
+}
+
 #one {
   flex-shrink: 1;
+  flex-grow: 1;
 }
 
 #two {
   flex-shrink: 0.66;
+  flex-grow: 0.66;
 }
 
 #three {
-flex-grow: 0.33;  
+  flex-shrink: 0.33;  
 }
 
 #four {
-  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 #five {
-  flex-grow: 0.5;
+  flex-shrink: 0.5;
 }
 
 #six {
-  flex-grow: 0.5;
+  flex-shrink: 0.5;
 }
