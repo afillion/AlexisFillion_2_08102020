@@ -12,9 +12,14 @@ p {
   color: var(--my_red) !important;
 } */
 
+section {
+  padding: 1rem;
+}
+
 .hebergement_fig, .populaire_fig, .activities {
   box-shadow: 0 .25rem .5rem grey;
   margin: 1rem;
+  border-radius: 1rem;
 }
 
 #populaire, footer {
@@ -237,7 +242,7 @@ figcaption p, figcaption h3 {
   .hebergement_fig {
     min-width: 30%;
     height: 13rem;
-    margin: 0 0 1rem 0;
+    /* margin: 0 0 1rem 0; */
   }
   
   .img-container-hebergement {
@@ -334,8 +339,8 @@ figcaption p, figcaption h3 {
   }
   
   .activities {
-    margin-right: 0;
-    margin-left: 0;
+    /* margin-right: 0;
+    margin-left: 0; */
     border-width: 1rem;
     border-color: #F2F2F2;
   }
