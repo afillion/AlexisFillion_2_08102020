@@ -16,9 +16,13 @@ section {
   padding: 1rem;
 }
 
+a:-webkit-any-link {
+  color: black;
+}
+
 .hebergement_fig, .populaire_fig, .activities {
   box-shadow: 0 .25rem .5rem grey;
-  margin: 1rem;
+  margin: 1rem 0 1rem 0;
   border-radius: 1rem;
 }
 
@@ -30,6 +34,30 @@ figure {
   background-color: white;
 }
 
+figcaption {
+  padding: .7rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+figcaption h3 {
+  font-size: 1rem;
+}
+
+figcaption p {
+  font-size: .9rem;
+}
+
+figcaption span {
+  margin-top: auto;
+  margin-bottom: .5rem;
+}
+
+figcaption span .fas {
+  font-size: .7rem;
+  letter-spacing: -.15rem;
+}
+
 #populaire-header {
   display: flex;
   justify-content: space-between;
@@ -38,9 +66,15 @@ figure {
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .blue {
+  color: #0065FC;
+}
+
+a:hover {
   color: #0065FC;
 }
 
@@ -48,9 +82,28 @@ body {
   color: #D9D9D9;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+::placeholder {
+  color: black;
+  font-weight: 800;
+  font-size: 1rem;
+  font-family: "Raleway";
+}
+
 #header_div-container {
   display: flex;
   justify-content: space-between;
+}
+
+#header_div-container {
+  padding: 1.5rem 1rem .5rem 1rem;
+}
+
+#header_div-container nav {
+  display: flex;
 }
 
 .desktop {
@@ -59,19 +112,15 @@ body {
 
 .small-screen ul {
   display: flex;
+  margin-block-end: 0;
 }
 
 nav > a:nth-child(2) {
   text-decoration: none;
   color: #0065FC;
   font-weight: bold;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   margin-right: .25rem; /* 3rem de bases */
-}
-
-.activities figcaption h3 {
-  margin-top: .75rem;
-  font-weight: 700;
 }
 
 ul {
@@ -97,10 +146,10 @@ li:hover {
 
 ul a {
   /* border-top: 5px solid transparent; */
-  padding-right: 10%;
-  margin-left: 4rem;
+  /* padding-right: 10%;
+  margin-left: 2rem; */
   text-decoration: none;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   /* margin: 0 3rem 0 0; */
 }
 
@@ -115,6 +164,7 @@ input {
 
 .form-button {
   min-height: 3rem;
+  margin-top: 1rem;
 }
 
 .form-right {
@@ -138,6 +188,7 @@ input {
   border-width: 1px;
   border-color:  #F2F2F2;
   border-style: solid;
+  width: 100%;
 }
 
 #header_div-container {
@@ -145,9 +196,13 @@ input {
   justify-content: space-between;
 }
 
-.form-button, ul {
+.form-button {
   display: inline-flex;
 } /* nav, */
+
+.form-button {
+  width: 100%;
+}
 
 .filtre-wrap-icon {
   background-color: #DEEBFF;
@@ -158,6 +213,7 @@ input {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: -.15rem .8rem -.15rem -.2rem;
 }
 
 .div-container_btn {
@@ -177,7 +233,6 @@ input {
 
 button span {
   margin-right: 1rem;
-  margin-left: 1rem;
   font-weight: bold;
 }
 
@@ -185,12 +240,13 @@ button span {
   display: flex;
   align-items: center;
   border-radius: 2rem;
-  border-width: 1px;
-  border-color:  #F2F2F2;
+  border-width: .15rem;
+  border-color: #D9D9D9;
   background-color: white;
   padding: 0;
   border-style: solid;
-  margin-right: 2rem;
+  border-left: none;
+  margin: .4rem 1rem .4rem 0;
 }
 
 .div-container_icone {
@@ -203,9 +259,9 @@ button span {
   align-items: center;
   justify-content: center;
   display: inline-flex;
-  width: 2rem;
-  height: 2rem;
-  margin: 1rem;
+  min-width: 2rem;
+  max-height: 2rem;
+  margin: .5rem .5rem 0 0;
 }
 
 #section-container {
@@ -242,7 +298,7 @@ figcaption p, figcaption h3 {
   .hebergement_fig {
     min-width: 30%;
     height: 13rem;
-    /* margin: 0 0 1rem 0; */
+    margin: 0 1rem 1rem 0;
   }
   
   .img-container-hebergement {
@@ -280,6 +336,15 @@ figcaption p, figcaption h3 {
   
   /* IMAGES SECTION POPULAIRE */
   
+  #populaire-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  #populaire-icon .fas {
+    font-size: 1.5rem;
+  }
+  
   #populaire_div-container_fig {
     height: 100%;
   }
@@ -287,8 +352,7 @@ figcaption p, figcaption h3 {
   .img-container-populaire {
     background-size: cover;
     /* height: calc(100% - .3rem); */
-    background-position-x: 150%;
-    background-position-y: 65%;
+    background-position: 50% 50%;
     border-radius: 1rem 0 0 1rem;
     margin: .3rem;
     width: 40%;
@@ -297,11 +361,11 @@ figcaption p, figcaption h3 {
   .populaire_fig {
     display: flex;
     max-width: 100%;
-    height: 30%;
+    min-height: 9rem;
   }
   
   .populaire_fig figcaption {
-    width: 50%;
+    width: 60%;
   }
   
   #populaire-one {
@@ -394,17 +458,49 @@ figcaption p, figcaption h3 {
   }
 
 /* Medium devices like tablets */
-@media screen and (min-device-width: 768px) {
-
+@media screen and (min-width: 768px) {
+  .form-left.small-screen {
+    display: none;
+  }
+  .form-left.desktop {
+    display: inline-block;
+  }
+  .form-left {
+    min-width: 8rem;
+    border-radius: 0 1rem 1rem 0;
+    margin: 0;
+  }
+  .div-container_btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+  #populaire_div-container_fig {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+  }
+  .populaire_fig {
+    width: 45%;
+  }
+  #hebergement_div-container_fig {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer {
+    display: flex;
+  }
+  footer section {
+    width: 30%;
+  }
 }
 
 /* Large devices like laptops */
-@media screen and (min-device-width: 992px) {
+@media screen and (min-width: 992px) {
 
 }
 
 /* Extra large devices like desktop */
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 1024px) {
   section {
     display: flex;
     flex-direction: column;
@@ -431,24 +527,36 @@ figcaption p, figcaption h3 {
     display: flex;
   }
 
+  ul.desktop {
+    margin-top: -1.5rem;
+  }
+
   button.desktop {
     display: inline-block;
   }
 
-  .form-left {
-    min-width: 8rem;
-    border-radius: 0 1rem 1rem 0;
-    margin: 0;
-  }
+
 
   ul a {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
     border-top: 5px solid transparent;
-    margin: 0 3rem 0 0;
-    padding-right: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 10rem;
+    padding-top: 1.5rem;
+  }
+
+  ul li:hover {
+    border-top-color: #0065FC;
   }
   
-  ul a:hover {
-    border-top-color:#0065FC;
+  .icone-container {
+    width: 2rem;
+    height: 2rem;
   }
   
   #section-container {
@@ -483,10 +591,6 @@ figcaption p, figcaption h3 {
   
   .hebergement-row {
     display: flex;
-  }
-  
-  .bold {
-    font-weight: bold;
   }
   
   #populaire {
