@@ -41,7 +41,7 @@ figcaption {
 }
 
 figcaption h3 {
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 figcaption p {
@@ -298,7 +298,6 @@ figcaption p, figcaption h3 {
   .hebergement_fig {
     min-width: 30%;
     height: 13rem;
-    margin: 0 1rem 1rem 0;
   }
   
   .img-container-hebergement {
@@ -485,6 +484,7 @@ figcaption p, figcaption h3 {
   #hebergement_div-container_fig {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   footer {
     display: flex;
@@ -504,6 +504,10 @@ figcaption p, figcaption h3 {
   section {
     display: flex;
     flex-direction: column;
+    padding: 0 2rem 0 2rem;
+  }
+  
+  #header_div-container {
     padding: 2rem;
   }
   
@@ -528,14 +532,12 @@ figcaption p, figcaption h3 {
   }
 
   ul.desktop {
-    margin-top: -1.5rem;
+    margin-top: -2rem;
   }
 
   button.desktop {
     display: inline-block;
   }
-
-
 
   ul a {
     margin: 0;
@@ -553,7 +555,24 @@ figcaption p, figcaption h3 {
   ul li:hover {
     border-top-color: #0065FC;
   }
-  
+
+  nav > a:nth-child(2) {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .form-button input {
+    width: auto;
+  }
+  .div-container_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .div-container_btn p {
+    width: auto;
+    margin-right: 2rem;
+  }
   .icone-container {
     width: 2rem;
     height: 2rem;
@@ -568,10 +587,13 @@ figcaption p, figcaption h3 {
   footer {
     background-color: #F2F2F2;
     display: flex;
+    padding: 2rem;
+    margin-top: 2rem;
   }
   
   footer section {
     width: 30%;
+    padding: 0;
   }
   
   #section-hebergement, #populaire, #form-right {
@@ -579,7 +601,7 @@ figcaption p, figcaption h3 {
   }
   
   #section-hebergement {
-    width: calc(60% - 1rem);
+    width: calc(60% - 2rem);
   }
   
   #hebergement_div-container_fig {
@@ -589,12 +611,12 @@ figcaption p, figcaption h3 {
     flex-direction: row;
   }
   
-  .hebergement-row {
-    display: flex;
+  .hebergement_fig figcaption {
+    padding: 0 0 0 1rem;
   }
   
   #populaire {
-    width: calc(30% - 1rem);
+    width: calc(30% - 2rem);
   }
   
   /* #section-hebergement, #populaire {
@@ -610,6 +632,12 @@ figcaption p, figcaption h3 {
   #populaire-icon {
     display: flex;
     align-items: center;
+  }
+
+  #populaire_div-container_fig {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   
   .hebergement_fig {
@@ -665,9 +693,7 @@ figcaption p, figcaption h3 {
   
   .img-container-populaire {
     background-size: cover;
-    /* height: calc(100% - .3rem); */
-    background-position-x: 150%;
-    background-position-y: 65%;
+    background-position: center;
     border-radius: 1rem 0 0 1rem;
     margin: .3rem;
     width: 40%;
@@ -677,6 +703,7 @@ figcaption p, figcaption h3 {
     display: flex;
     max-width: 100%;
     height: 30%;
+    width: auto;
   }
   
   .populaire_fig figcaption {
@@ -699,18 +726,14 @@ figcaption p, figcaption h3 {
   
   #activities_div-container_fig {
     display: flex;
-    flex-flow: row wrap;
-    max-height: 100%;
-    align-items: stretch;
     justify-content: space-between;
   }
   
   .column-container {
     display: flex;
     flex-direction: column;
-    min-width: 20%;
-    max-width: 20%;
-    min-height: 35rem;
+    min-width: 23%;
+    min-height: 25rem;
   }
   
   .img-container-activities {
