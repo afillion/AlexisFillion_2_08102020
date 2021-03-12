@@ -20,6 +20,10 @@ a:-webkit-any-link {
   color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 .hebergement_fig, .populaire_fig, .activities {
   box-shadow: 0 .25rem .5rem grey;
   margin: 1rem 0 1rem 0;
@@ -112,7 +116,7 @@ a:hover {
 
 .small-screen ul {
   display: flex;
-  margin-block-end: 0;
+  margin-bottom: 0;
 }
 
 nav > a:nth-child(2) {
@@ -120,7 +124,7 @@ nav > a:nth-child(2) {
   color: #0065FC;
   font-weight: bold;
   margin-top: 1rem;
-  margin-right: .25rem; /* 3rem de bases */
+  margin-right: .25rem;
 }
 
 ul {
@@ -142,19 +146,6 @@ li {
 
 li:hover {
   border-bottom: .2rem solid #0065FC;
-}
-
-ul a {
-  /* border-top: 5px solid transparent; */
-  /* padding-right: 10%;
-  margin-left: 2rem; */
-  text-decoration: none;
-  /* margin-bottom: 5rem; */
-  /* margin: 0 3rem 0 0; */
-}
-
-ul a:hover {
-  /* border-top-color:#0065FC; */
 }
 
 input {
