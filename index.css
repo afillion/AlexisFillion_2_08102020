@@ -25,7 +25,7 @@ a:-webkit-any-link {
   color: black;
 }
 
-a:hover {
+li:hover a {
   color: #0065FC;
 }
 
@@ -78,57 +78,52 @@ figcaption span {
   margin-bottom: .5rem;
 }
 
-figcaption span .fas {
+figcaption span .fas { /* figcaption span .fas cible les etoiles dans les cartes */
   font-size: .7rem;
   letter-spacing: -.15rem;
 }
+
+
+
+
+
 
 #populaire-header {
   display: flex;
   justify-content: space-between;
 }
-
-
-
 ::placeholder {
   color: black;
   font-weight: 800;
   font-size: 1rem;
   font-family: "Raleway";
 }
-
 #header_div-container {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 1rem .5rem 1rem;
 }
-
 #header_div-container nav {
   display: flex;
 }
-
 .desktop {
   display: none;
 }
-
 .small-screen ul {
   display: flex;
   margin-bottom: 0;
 }
-
 nav > a:nth-child(2) {
   color: #0065FC;
   font-weight: bold;
   margin-top: 1rem;
   margin-right: .25rem;
 }
-
 ul {
   list-style-type: none;
   margin-top: 0;
   padding: 0;
 }
-
 li {
   display: flex;
   justify-content: center;
@@ -321,8 +316,7 @@ figcaption p, figcaption h3 {
   
   .img-container-populaire {
     background-size: cover;
-    /* height: calc(100% - .3rem); */
-    background-position: 50% 50%;
+    background-position: center;
     border-radius: 1rem 0 0 1rem;
     margin: .3rem;
     width: 40%;
@@ -352,17 +346,13 @@ figcaption p, figcaption h3 {
   
   /* IMAGES SECTION ACTIVITES */
   
-  /* #activities_div-container_fig {
-    display: flex;
-    flex-flow: row wrap;
-    max-height: 100%;
-    align-items: stretch;
-    justify-content: space-between;
-  } */
-  
   .column-container {
     display: flex;
     flex-direction: column;
+  }
+  
+  .activities {
+    height: 10rem;
   }
   
   .img-container-activities {
@@ -370,37 +360,6 @@ figcaption p, figcaption h3 {
     background-position: center;
     border-radius: 1rem 1rem 0 0;
     height: calc(100% - 3rem);
-  }
-  
-  .activities {
-    /* margin-right: 0;
-    margin-left: 0; */
-    border-width: 1rem;
-    border-color: #F2F2F2;
-  }
-  
-  #fig_grow_1 {
-    height: 10rem;
-  }
-  
-  #fig_grow_2 {
-    height:10rem;
-  }
-  
-  #fig_grow_3 {
-    height:10rem;
-  }
-  
-  #fig_grow_4 {
-    height: 10rem;
-  }
-  
-  #fig_grow_5 {
-    height:10rem;
-  }
-  
-  #fig_grow_6 {
-    height:10rem;
   }
   
   #activities-one {
@@ -500,7 +459,7 @@ figcaption p, figcaption h3 {
     display: inline-block;
   }
 
-  ul li {
+  li {
     border-top: 5px solid transparent;
     margin: 0;
     padding: 0;
@@ -509,7 +468,7 @@ figcaption p, figcaption h3 {
     border-bottom: none;
   }
 
-  ul li:hover {
+  li:hover {
     border-top-color: #0065FC;
   }
 
@@ -536,14 +495,11 @@ figcaption p, figcaption h3 {
   }
   
   footer {
-    background-color: #F2F2F2;
-    display: flex;
     padding: 2rem;
     margin-top: 2rem;
   }
   
   footer section {
-    width: 30%;
     padding: 0;
   }
   
@@ -561,21 +517,6 @@ figcaption p, figcaption h3 {
   
   #populaire {
     width: calc(30% - 2rem);
-  }
-  
-  /* #section-hebergement, #populaire {
-    padding: 1.5rem;
-  } */
-  
-  #populaire-header {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  #populaire-icon {
-    display: flex;
-    align-items: center;
   }
 
   #populaire_div-container_fig {
@@ -600,35 +541,12 @@ figcaption p, figcaption h3 {
     padding-bottom: 1rem;
   }
   
-  .img-container-populaire {
-    background-size: cover;
-    background-position: center;
-    border-radius: 1rem 0 0 1rem;
-    margin: .3rem;
-    width: 40%;
-  }
-  
   .populaire_fig {
-    display: flex;
-    max-width: 100%;
-    height: 30%;
     width: auto;
   }
   
   .populaire_fig figcaption {
     width: 50%;
-  }
-  
-  #populaire-one {
-    background-image: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-  }
-  
-  #populaire-two {
-    background-image: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-  }
-  
-  #populaire-three {
-    background-image: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
   }
   
   /* IMAGES SECTION ACTIVITES */
@@ -639,17 +557,8 @@ figcaption p, figcaption h3 {
   }
   
   .column-container {
-    display: flex;
-    flex-direction: column;
     min-width: 23%;
     min-height: 30rem;
-  }
-  
-  .activities {
-    margin-right: 0;
-    margin-left: 0;
-    border-width: 1rem;
-    border-color: #F2F2F2;
   }
   
   #fig_grow_1 {
@@ -674,29 +583,5 @@ figcaption p, figcaption h3 {
   
   #fig_grow_6 {
     height: 50%;
-  }
-  
-  #activities-one {
-    background-image: url("./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-  }
-  
-  #activities-two {
-    background-image: url("./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-  }
-  
-  #activities-three {
-    background-image: url("./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-  }
-  
-  #activities-four {
-    background-image: url("./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-  }
-  
-  #activities-five {
-    background-image: url("./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-  }
-  
-  #activities-six {
-    background-image: url("./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
   }
 }
