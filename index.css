@@ -689,6 +689,7 @@ figcaption p, figcaption h3 {
   
   #populaire_div-container_fig {
     height: 100%;
+    padding-bottom: 1rem;
   }
   
   .img-container-populaire {
@@ -733,14 +734,7 @@ figcaption p, figcaption h3 {
     display: flex;
     flex-direction: column;
     min-width: 23%;
-    min-height: 25rem;
-  }
-  
-  .img-container-activities {
-    background-size: cover;
-    background-position: center;
-    border-radius: 1rem 1rem 0 0;
-    height: calc(100% - 3rem);
+    min-height: 30rem;
   }
   
   .activities {
