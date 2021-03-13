@@ -460,8 +460,10 @@ figcaption p, figcaption h3 {
   }
   
   #header_div-container {
-    padding: 0 2rem 2rem 2rem;
     flex-wrap: nowrap;
+  }
+  .logo-header {
+    padding-left: 2rem;
   }
   .sign-up {
     padding-top: 1rem;
