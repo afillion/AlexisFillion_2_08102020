@@ -344,12 +344,6 @@ figcaption p, figcaption h3 {
     max-width: 100%;
     min-height: 9rem;
   }
-
-  .populaire_fig a {
-    display: flex;
-    min-width: 100%;
-    min-height: 9rem;
-  }
   
   .populaire_fig figcaption {
     width: 60%;
