@@ -439,11 +439,6 @@ figcaption p, figcaption h3 {
   }
 }
 
-/* Large devices like laptops */
-@media screen and (min-width: 992px) {
-
-}
-
 /* Extra large devices like desktop */
 @media screen and (min-width: 1024px) {
   section {
