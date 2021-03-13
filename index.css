@@ -438,7 +438,6 @@ figcaption p, figcaption h3 {
     width: 30%;
   }
 }
-
 /* Extra large devices like desktop */
 @media screen and (min-width: 1024px) {
   section {
